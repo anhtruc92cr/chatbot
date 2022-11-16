@@ -1,0 +1,9 @@
+body {
+  &.bot_active {
+    #header-outer {
+      width: 30%;
+      left: 65%;
+      top: 20px !important;
+    }
+  }
+}

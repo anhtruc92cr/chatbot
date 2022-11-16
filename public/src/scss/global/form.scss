@@ -1,0 +1,205 @@
+.modal-form-chatbot {
+  .form-title {
+    font-size: 22px;
+    line-height: normal;
+  }
+
+  .gfield_label {
+    display: none;
+  }
+
+  .soxes-form-wrapper.gf-after-ajax-call {
+    .radio-contact-way {
+      height: 40px;
+
+      .gfield_radio {
+        .gchoice {
+          width: 50%;
+          transform: translate(0, 0);
+        }
+
+        [type="radio"]:checked,
+        [type="radio"]:not(:checked) {
+          position: absolute;
+          left: -9999px;
+        }
+
+        [type="radio"]:checked + label,
+        [type="radio"]:not(:checked) + label {
+          position: relative;
+          padding-left: 28px;
+          cursor: pointer;
+          line-height: 20px;
+          display: inline-block;
+          color: rgba(0, 0, 0, 0.87);
+        }
+
+        [type="radio"]:checked + label:before,
+        [type="radio"]:not(:checked) + label:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 16px;
+          height: 16px;
+          border: 2px solid rgba(0, 0, 0, 0.54);
+          border-radius: 100%;
+          background: transparent;
+        }
+
+        [type="radio"]:checked + label:before {
+          border: 2px solid $orange;
+        }
+
+        [type="radio"]:checked + label:after,
+        [type="radio"]:not(:checked) + label:after {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background: $orange;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          border-radius: 100%;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+        }
+
+        [type="radio"]:not(:checked) + label:after {
+          opacity: 0;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+
+        [type="radio"]:checked + label:after {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    }
+
+    .gfield--width-half {
+      height: 56px;
+      background: $white;
+    }
+
+    .gform_wrapper, #gform_wrapper_4.gform_wrapper, #gform_wrapper_3.gform_wrapper {
+      .top_label {
+        .gfield_label {
+          display: inline-block;
+          letter-spacing: .00937em;
+          text-decoration: inherit;
+          text-transform: inherit;
+          font-size: 16px !important;
+          color: rgba(0, 0, 0, 0.6);
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          pointer-events: none;
+          left: 16px;
+          transition: all .2s linear;
+          margin-top: 0;
+          font-family: inherit !important;
+          font-weight: 400;
+        }
+
+        input {
+          height: 56px;
+          background: $white;
+          padding: 25px 16px 10px !important;
+          font-family: inherit !important;
+          font-weight: 400;
+        }
+
+        .input-focused {
+          .chatbot-input-mask {
+            transform: scaleX(1) !important;
+          }
+
+          .gfield_label {
+            font-size: 13px !important;
+            top: 15px;
+            color: $orange;
+
+            .gfield_required {
+              font-size: 11px;
+            }
+          }
+
+          &.text-gray {
+            .gfield_label {
+              color: rgba(0, 0, 0, 0.6);
+            }
+
+            .chatbot-input-mask {
+              transform: scaleX(0) !important;
+            }
+          }
+        }
+
+        .ginput_container_text, .ginput_container_textarea, .ginput_container_phone, .ginput_container_email {
+          .chatbot-input-mask {
+            border-bottom: 2px solid $orange;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+          }
+        }
+      }
+
+      .textarea-contact-content {
+        .gfield_label {
+          top: 23px;
+        }
+
+        textarea {
+          padding: 0 16px !important;
+          margin: 25px 0;
+          background: $white;
+        }
+      }
+
+      .auto-add-content .gfield_radio .gchoice label {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+  }
+
+  .loading-container-chatbot {
+    display: none;
+  }
+
+  &.loading {
+    .loading-container-chatbot {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, .3);
+      z-index: 20000;
+      top: 0;
+      left: 0;
+      display: block;
+
+      .overlay-loading {
+        border: 6px solid #f3f3f3;
+        border-top: 6px solid #000;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -30px;
+        margin-top: -30px;
+      }
+    }
+  }
+}

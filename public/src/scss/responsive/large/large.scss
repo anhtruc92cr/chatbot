@@ -1,0 +1,11 @@
+.modal-wrapper {
+  &.loading {
+    .modal-outer {
+      height: 100%;
+      align-items: center;
+    }
+    .modal-inner {
+      min-height: 80vh;
+    }
+  }
+}

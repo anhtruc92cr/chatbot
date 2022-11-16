@@ -1,0 +1,40 @@
+.soxes_overlay_container {
+  .close-text {
+    top: 22px;
+    left: 15px;
+  }
+  &.bot_active .wrap_answer.clicked {
+    display: flex;
+    align-items: center;
+    &:hover {
+      background: $light-green;
+      color: $black;
+      button {
+        color: $black;
+      }
+      .sprite {
+        fill: $black;
+      }
+    }
+  }
+}
+body.bot_active #header-outer #top .container .row .span_9 {
+  .mobile-search .icon-salient-search {
+    color: $white !important;
+  }
+  .slide-out-widget-area-toggle span i{
+    &::after, &::before {
+      background: $white !important;
+    }
+  }
+}
+.modal-wrapper {
+  padding: 6px;
+}
+.chatbot_widget .soxes_overlay_container .bot_item_wrapper {
+  display: block;
+  .bot_question {
+    min-width: auto;
+    margin-right: 0;
+  }
+}

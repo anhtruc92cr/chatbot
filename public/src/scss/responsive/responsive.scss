@@ -1,0 +1,22 @@
+/* desktop */
+@media only screen and (min-width: 1280px) {
+  @import 'large/large';
+}
+/* ipad */
+@media only screen and (max-width: 1140px) {
+  @import 'medium/medium';
+}
+/* ipad 2 */
+@media only screen and (max-width: 1000px) {
+  @import 'xm/xm';
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  @import 'small/small';
+}
+
+/* mobile 2 */
+@media only screen and (max-width: 480px) {
+  @import 'xs/xs';
+}

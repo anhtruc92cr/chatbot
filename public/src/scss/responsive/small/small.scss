@@ -1,0 +1,59 @@
+.soxes_overlay_container {
+  &.bot_active {
+    .soxes_overlay_container_outer {
+      padding-top: 20px;
+    }
+  }
+
+  .bot_inner {
+    width: 100%;
+
+    .bot_content {
+      .bot_item_wrapper {
+        width: 100%;
+      }
+    }
+  }
+
+  .bot_icon img {
+    max-width: 30px;
+  }
+}
+
+.chatbot_widget {
+  .soxes_overlay_container {
+    .bot_item_wrapper {
+      display: block;
+
+      .bot_question {
+        min-width: 95%;
+        margin-right: 0;
+      }
+    }
+
+    .bot_content {
+      .bot_icon {
+        width: auto;
+      }
+    }
+  }
+}
+
+.modal-wrapper .modal-inner {
+  margin: 0;
+}
+
+.modal-form-chatbot {
+  .author-details p {
+    padding-bottom: 15px;
+  }
+
+  .soxes-form-wrapper.gf-after-ajax-call .radio-contact-way {
+    height: auto;
+
+    .gfield_radio .gchoice {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
