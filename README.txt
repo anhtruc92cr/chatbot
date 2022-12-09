@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: Truc Nguyen
-Donate link: https://soxes.ch/
-Tags: chatbot, soxes
+Email: anhtruc92@gmail.com
+Tags: chatbot
 Requires at least: 5.0.0
 Tested up to: 5.8
 Stable tag: 5.8
